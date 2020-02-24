@@ -1,0 +1,130 @@
+.gym {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 235px;
+
+  &__wrapper {
+    display: flex;
+    width: 84.92%;
+    margin: 0 auto;
+  }
+
+  &__description-wrapper {
+    width: 355px;
+    padding-top: 47px;
+    margin-left: 60px;
+    margin-right: 85px;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: "BebasNeue", "Helvetica", sans-serif;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #102654;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 39px;
+    font-family: "Roboto Condensed", "Helvetica", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #102654;
+  }
+
+  &__description {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: "Roboto Condensed", "Helvetica", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+    color: #102654;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 99px;
+    padding-bottom: 183px;
+
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      width: 88.28%;
+    }
+
+    &__description-wrapper {
+      width: 502px;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 9px;
+      font-size: 42px;
+    }
+
+    &__subtitle {
+      margin-bottom: 34px;
+    }
+
+    &__description {
+      margin-bottom: 43px;
+
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 69px;
+    padding-bottom: 70px;
+
+    &__wrapper {
+      width: 100%;
+    }
+
+    &__description-wrapper {
+      width: 90.62%;
+      text-align: left;
+    }
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 6px;
+    }
+
+    &__subtitle {
+      margin-bottom: 24px;
+    }
+
+    &__description {
+      padding-right: 35px;
+      margin-bottom: 33px;
+    }
+
+    &__img-wrapper {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+}
