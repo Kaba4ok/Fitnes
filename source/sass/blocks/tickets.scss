@@ -194,8 +194,9 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 99px;
+    padding-bottom: 111px;
     background-image: url("../img/bg-disk-tablet@1x.png");
-    background-position: right bottom 5px;
+    background-position: right bottom -73px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-disk-tablet@2x.png");
@@ -234,6 +235,7 @@
 
   @media (max-width: $mobile-width) {
     padding-top: 70px;
+    padding-bottom: 56px;
     background-image: none;
 
     &__title {
