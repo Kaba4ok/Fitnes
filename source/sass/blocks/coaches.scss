@@ -1,0 +1,187 @@
+.coaches {
+  max-width: 1366px;
+  padding-top: 59px;
+  padding-bottom: 120px;
+  margin: 0 auto;
+
+  &__wrapper {
+    position: relative;
+    width: 84.92%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    padding: 0;
+    padding-left: 2px;
+    margin: 0;
+    margin-bottom: 52px;
+    font-family: "BebasNeue", "Helvetica", sans-serif;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #102654;
+    text-transform: uppercase;
+  }
+
+  &__list-wrapper {
+    position: relative;
+    height: 294px;
+    overflow: hidden;
+  }
+
+  &__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__btn-slide {
+    position: absolute;
+    bottom: 129px;
+    width: 32px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:before, &:after {
+      position: absolute;
+      top: 9px;
+      left: 0;
+      content: "";
+      width: 23px;
+      height: 1px;
+      background-color: #afafaf;
+    }
+
+    &:after {
+      top: 25px;
+    }
+
+    &--prev {
+      left: -6%;
+
+      &:before {
+        left: 11px;
+        transform: rotate(-45deg);
+      }
+
+      &:after {
+        left: 11px;
+        transform: rotate(45deg);
+      }
+    }
+
+    &--next {
+      right: -6%;
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 49px;
+    padding-bottom: 100px;
+
+    &__wrapper {
+      width: 88.282%;
+    }
+
+    &__title {
+      margin-bottom: 41px;
+      font-size: 42px;
+      text-align: center;
+    }
+
+    &__list-wrapper {
+      width: 83.481%;
+      margin: 0 auto;
+    }
+
+    // &__list {
+    //   left: -100%;
+    // }
+
+    &__btn-slide {
+
+      &--prev {
+        left: -2%;
+      }
+
+      &--next {
+        right: -2%;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 34px;
+    padding-bottom: 70px;
+
+    &__wrapper {
+      width: 91.875%;
+    }
+
+    &__title {
+      margin-bottom: 43px;
+      font-size: 32px;
+    }
+
+    &__list-wrapper {
+      width: 76.871%;
+    }
+
+    // &__list {
+    //   left: -200%;
+    // }
+
+    &__btn-slide {
+      bottom: 147px;
+      width: 14px;
+      height: 20px;
+
+      &:before, &:after {
+        top: 5px;
+        width: 14px;
+      }
+
+      &:after {
+        top: 15px;
+      }
+
+      &--prev {
+        left: 0;
+
+        &:before {
+          left: 0;
+        }
+
+        &:after {
+          left: 0;
+        }
+      }
+
+      &--next {
+        right: 0;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

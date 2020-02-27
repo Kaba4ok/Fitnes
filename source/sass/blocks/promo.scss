@@ -1,6 +1,8 @@
 .promo {
+  max-width: 1366px;
   padding-top: 51px;
   padding-bottom: 60px;
+  margin: 0 auto;
 
    &__wrapper {
     width: 84.92%;
@@ -78,7 +80,7 @@
       width: 90.625%;
       padding-bottom: 292px;
       background-size: auto 292px;
-      background-position: center bottom;
+      background-position: center bottom -40px;
     }
 
     &__description {
@@ -96,6 +98,7 @@
   @media (max-width: 320px) {
     &__wrapper {
       background-image: url("../img/bg-application-mobile@1x.jpg");
+      background-position: center bottom;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/bg-application-mobile@2x.jpg");

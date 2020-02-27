@@ -1,7 +1,9 @@
 .gym {
   position: relative;
+  max-width: 1366px;
   padding-top: 120px;
   padding-bottom: 235px;
+  margin: 0 auto;
 
   &__wrapper {
     display: flex;
