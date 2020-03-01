@@ -1,0 +1,267 @@
+.advert {
+  padding-top: 120px;
+  padding-bottom: 60px;
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 52px;
+    font-family: "BebasNeue", "Helvetica", sans-serif;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #102654;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    width: 84.92%;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+  }
+
+  &__item {
+    width: 48.276%;
+    box-sizing: border-box;
+
+    &--main {
+      display: flex;
+      margin-right: 3.449%;
+    }
+  }
+
+  &__suggestion {
+    width: 50%;
+    padding: 40px 45px 46px;
+    color: #ffffff;
+    background-color: #ED0233;
+    box-sizing: border-box;
+  }
+
+  &__item-main-bg {
+    flex-grow: 1;
+    background-color: #67ABE9;
+    background-image: url("../img/promotion-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+  }
+
+  &__suggestion-duration {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  &__suggestion-cost {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  &__suggestion-description {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 186px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  &__suggestion-btn {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: auto;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  &__secondary-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__secondary-list-item {
+    padding: 24px 28px 30px;
+    margin-bottom: 38px;
+    border-width: 7px;
+    border-style: solid;
+    border-image: linear-gradient(-45deg, #00359F, #D10A42);
+    border-image-slice: 1;
+    box-sizing: border-box;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__secondary-list-item-suggestion {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #1C3374;
+  }
+
+  &__secondary-list-item-description {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 68px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #1C3374;
+  }
+
+  &__secondary-list-item-btn {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #1C3374;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid #1C3374;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    &__title {
+      font-size: 42px;
+      margin-bottom: 41px;
+    }
+
+    &__list {
+      flex-direction: column;
+      width: 88.282%;
+    }
+
+    &__item {
+      width: 100%;
+
+      &--main {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__suggestion {
+      width: 41.151%;
+    }
+
+    &__item-main-bg {
+      background-image: url("../img/promotion-tablet@1x.jpg");
+    }
+
+    &__secondary-list {
+      flex-direction: row;
+    }
+
+    &__secondary-list-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 47.789%;
+      padding-bottom: 28px;
+      margin-bottom: 0;
+    }
+
+    &__secondary-list-item-description {
+      margin-bottom: 51px;
+    }
+
+    &__secondary-list-item:first-child &__secondary-list-item-description {
+      padding-right: 55px;
+    }
+
+    &__secondary-list-item-btn {
+      margin-top: auto;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 49px;
+    padding-bottom: 35px;
+
+    &__title {
+      margin-bottom: 43px;
+      font-size: 32px;
+    }
+
+    &__list {
+      width: 90.625%;
+    }
+
+    &__item {
+
+      &--main {
+        flex-direction: column;
+      }
+    }
+
+    &__suggestion {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__suggestion-cost {
+      margin-bottom: 15px;
+    }
+
+    &__suggestion-description {
+      margin-bottom: 28px;
+    }
+
+    &__item-main-bg {
+      height: 299px;
+      background-image: url("../img/promotion-mobile@1x.jpg");
+    }
+
+    &__secondary-list {
+      flex-direction: column;
+    }
+
+    &__secondary-list-item {
+      align-items: center;
+      width: 100%;
+      padding-top: 35px;
+      padding-bottom: 39px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    &__secondary-list-item-suggestion {
+      margin-bottom: 11px;
+    }
+
+    &__secondary-list-item:first-child &__secondary-list-item-description {
+      padding: 0;
+    }
+
+    &__secondary-list-item-description {
+      padding: 0 29px;
+      margin-bottom: 28px;
+    }
+  }
+}
