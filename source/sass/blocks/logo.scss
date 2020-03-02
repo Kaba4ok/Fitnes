@@ -1,0 +1,32 @@
+.logo {
+  display: block;
+  font-family: "BebasNeue", "Helvetica", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: underline;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+  }
+}

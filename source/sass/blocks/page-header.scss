@@ -26,31 +26,6 @@
     margin-bottom: 111px;
   }
 
-  &__logo {
-    display: block;
-    font-family: "BebasNeue", "Helvetica", sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    &:focus {
-      text-decoration: underline;
-    }
-
-    &:active {
-      color: rgba(255, 255, 255, 0.5);
-      text-decoration: underline;
-    }
-  }
-
   &__phone {
     display: block;
     font-family: "BebasNeue", "Helvetica", sans-serif;

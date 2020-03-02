@@ -1,0 +1,158 @@
+.footer {
+  padding: 40px 0;
+  margin-top: auto;
+  background-color: #030A1A;
+
+  &__content-wrapper {
+    display: flex;
+    align-items: center;
+    width: 84.92%;
+    margin: 0 auto;
+  }
+
+  &__nav-column {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &:first-child {
+      width: 44.656%;
+      margin-right: 40px;
+    }
+  }
+
+  &__nav-item {
+    margin-right: 40px;
+
+    &--logo-wrapper {
+      margin-right: auto;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__nav-link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    list-style: none;
+  }
+
+  &__social-item {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__social-icon {
+    fill: #ffffff;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 44px 0;
+
+    &__content-wrapper {
+      width: 88.282%;
+    }
+
+    &__nav-column {
+
+      &:first-child {
+        width: 42.45%;
+        margin-right: 30px;
+      }
+    }
+
+    &__nav-item {
+      margin-right: 30px;
+
+      &--logo-wrapper {
+        margin-right: auto;
+      }
+    }
+
+    &__social-item {
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 49px 0;
+
+    &__content-wrapper {
+      width: 90.625%;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    &__nav-column {
+      width: 50%;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 15px;
+      margin-bottom: 13px;
+      box-sizing: border-box;
+
+      &:first-child {
+        width: 50%;
+        padding-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    &__nav-item {
+      margin-right: 0;
+      margin-bottom: 22px;
+
+      &--logo-wrapper {
+        margin-bottom: 21px;
+        margin-right: 0;
+      }
+    }
+
+    &__social {
+      width: 100%;
+    }
+
+    &__social-item {
+      margin-right: 35px;
+    }
+
+    &__nav-link {
+      font-size: 16px;
+    }
+
+    &__social-icon {
+
+      &--vk {
+        width: 32px;
+        height: 17px;
+      }
+
+      &--ig {
+        width: 27px;
+        height: 27px;
+      }
+
+      &--fb {
+        width: 14px;
+        height: 27px;
+      }
+    }
+  }
+}
