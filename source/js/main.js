@@ -3,81 +3,40 @@
 (function () {
 
   let coaches = document.querySelector('.coaches');
-  let coachesList = coaches.querySelector('.coaches__list');
   let coachesSlides = coaches.querySelectorAll('.coach');
   let prevCoachesSlideBtn = coaches.querySelector('.coaches__btn-slide--prev');
   let nextCoachesSlideBtn = coaches.querySelector('.coaches__btn-slide--next');
 
-  const SLIDES_COUNT_DESKTOP = 4;
-  const SLIDES_COUNT_TABLET = 2;
-  const SLIDES_COUNT_DEFAULT = 1;
-  const DESKTOP_WIDTH = 1200;
-  const TABLET_WIDTH = 768;
+  let reviews = document.querySelector('.reviews');
+  let reviewsSlides = reviews.querySelectorAll('.reviews__item');
+  let prevReviewsSlideBtn = reviews.querySelector('.reviews__btn--prev');
+  let nextReviewsSlideBtn = reviews.querySelector('.reviews__btn--next');
 
-  let slideIndex = 0;
+  let scrollToTicketsBtn = document.querySelector('.page-header__ticket-btn');
+  let tickets = document.querySelector('.tickets');
 
-// --------------------------------------------------------------
+  scrollToTicketsBtn.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    tickets.scrollIntoView({block: "start", behavior: "smooth"});
+  });
 
-  let showSlide = function (slidesCount, slides, drop) {
-    if (drop) {
-      slideIndex += slidesCount;
-    } else {
-      slideIndex -= slidesCount;
-    }
-
-    if (slideIndex < 0) {
-      slideIndex = 0;
-    } else if (slideIndex > (slides.length - slidesCount)) {
-      slideIndex = (slides.length - slidesCount);
-    }
-
-    slides.forEach(function(slide) {
-      slide.style.display = 'none';
-    });
-
-    for (let i = slideIndex; i < slides.length; i++) {
-      slides[i].style.display = 'block';
-    }
-  }
-
-// --------------------------------------------------------------
-
-  let getSlidesCount = function () {
-    let slidesCount = 0;
-
-    if (window.innerWidth >= DESKTOP_WIDTH) {
-      slidesCount = SLIDES_COUNT_DESKTOP;
-    } else if (window.innerWidth >= TABLET_WIDTH) {
-      slidesCount = SLIDES_COUNT_TABLET;
-    } else {
-      slidesCount = SLIDES_COUNT_DEFAULT;
-    }
-
-    return slidesCount;
-  }
-
-// --------------------------------------------------------------
-
-  let changeSlide = function (slides, drop, screenWidth = false) {
-    let slidesCount = SLIDES_COUNT_DEFAULT;
-
-    if (screenWidth) {
-      slidesCount = getSlidesCount();
-    }
-
-    showSlide(slidesCount, slides, drop);
-  }
-
-// --------------------------------------------------------------
-
-  changeSlide(coachesSlides, false, true);
+  window.coachesSlider.startSlideShow(coachesSlides);
+  window.reviewSlider.showSlide(reviewsSlides, false);
 
   prevCoachesSlideBtn.addEventListener('click', function () {
-    changeSlide(coachesSlides, false, true);
+    window.coachesSlider.changeSlide(coachesSlides, false, true);
   });
 
   nextCoachesSlideBtn.addEventListener('click', function () {
-    changeSlide(coachesSlides, true, true);
+    window.coachesSlider.changeSlide(coachesSlides, true, true);
+  });
+
+  prevReviewsSlideBtn.addEventListener('click', function () {
+    window.reviewSlider.showSlide(reviewsSlides, false);
+  });
+
+  nextReviewsSlideBtn.addEventListener('click', function () {
+    window.reviewSlider.showSlide(reviewsSlides, true);
   });
 
 })();

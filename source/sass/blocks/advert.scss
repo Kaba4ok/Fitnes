@@ -6,18 +6,13 @@
     padding: 0;
     margin: 0;
     margin-bottom: 52px;
-    font-family: "BebasNeue", "Helvetica", sans-serif;
-    font-size: 49px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 0.03em;
     color: #102654;
-    text-transform: uppercase;
     text-align: center;
   }
 
   &__list {
     display: flex;
+    max-width: 1366px;
     width: 84.92%;
     padding: 0;
     margin: 0 auto;
@@ -49,6 +44,10 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/promotion-desktop@2x.jpg");
+    }
   }
 
   &__suggestion-duration {
@@ -87,6 +86,22 @@
     text-transform: uppercase;
     text-decoration: none;
     border-bottom: 1px solid #ffffff;
+
+    &:hover {
+      color: #1C3374;
+      border-color: #1C3374;
+    }
+
+    &:focus {
+      color: #1C3374;
+      border-color: #1C3374;
+    }
+
+    &:active {
+      color: #1C3374;
+      border-color: #1C3374;
+      opacity: 0.3;
+    }
   }
 
   &__secondary-list {
@@ -141,6 +156,22 @@
     text-transform: uppercase;
     text-decoration: none;
     border-bottom: 1px solid #1C3374;
+
+    &:hover {
+      color: #ED0233;
+      border-color: #ED0233;
+    }
+
+    &:focus {
+      color: #ED0233;
+      border-color: #ED0233;
+    }
+
+    &:active {
+      color: #ED0233;
+      border-color: #ED0233;
+      opacity: 0.3;
+    }
   }
 
   @media (max-width: $tablet-width) {
@@ -172,6 +203,10 @@
 
     &__item-main-bg {
       background-image: url("../img/promotion-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/promotion-tablet@2x.jpg");
+      }
     }
 
     &__secondary-list {
@@ -236,6 +271,10 @@
     &__item-main-bg {
       height: 299px;
       background-image: url("../img/promotion-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/promotion-mobile@2x.jpg");
+      }
     }
 
     &__secondary-list {

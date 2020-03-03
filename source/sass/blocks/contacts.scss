@@ -11,17 +11,19 @@
     margin-right: auto;
   }
 
+  &__content-wrapper {
+
+    @media (min-width: 1367px) {
+      max-width: 458px;
+      margin-left: 120px;
+    }
+  }
+
   &__title {
     padding: 0;
     margin: 0;
     margin-bottom: 41px;
-    font-family: "BebasNeue", "Helvetica", sans-serif;
-    font-size: 49px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 0.03em;
     color: #102654;
-    text-transform: uppercase;
   }
 
   &__list {

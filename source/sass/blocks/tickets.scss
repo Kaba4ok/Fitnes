@@ -17,13 +17,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: 35px;
-    font-family: "BebasNeue", "Helvetica", sans-serif;
-    font-size: 49px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 0.03em;
     color: #102654;
-    text-transform: uppercase;
     text-align: center;
   }
 
@@ -39,12 +33,15 @@
 
   &__label {
     padding-bottom: 12px;
-    font-family: "Roboto Condensed", "Helvetica", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 150%;
     color: rgba(16, 38, 84, 0.5);
     cursor: pointer;
+
+    &:hover {
+      box-shadow: inset 0 -2px 0 0 #103AAE;
+    }
   }
 
   &__list {
@@ -72,7 +69,8 @@
       margin-right: 0;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       padding-top: 50px;
       padding-bottom: 61px;
       border-width: 7px;
@@ -86,7 +84,6 @@
     padding: 0;
     margin: 0;
     margin-bottom: 5px;
-    font-family: "Roboto Condensed", "Helvetica", sans-serif;
     font-size: 26px;
     font-weight: 700;
     line-height: 152.3%;
@@ -97,7 +94,6 @@
     padding: 0;
     margin: 0;
     margin-bottom: 37px;
-    font-family: "Roboto Condensed", "Helvetica", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
@@ -117,7 +113,6 @@
     left: 50%;
     padding: 0;
     margin: 0;
-    font-family: "Roboto Condensed", "Helvetica", sans-serif;
     font-size: 100px;
     font-weight: 700;
     line-height: 100px;
@@ -131,7 +126,6 @@
     padding: 0;
     padding-top: 28px;
     margin: 0;
-    font-family: "Roboto Condensed", "Helvetica", sans-serif;
     font-size: 60px;
     font-weight: 700;
     line-height: 150%;
@@ -148,7 +142,6 @@
   &__item-btn {
     width: 208px;
     padding: 25px 20px 24px;
-    font-family: "Roboto Condensed", "Helvetica", sans-serif;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -158,9 +151,23 @@
     text-transform: uppercase;
     text-decoration: none;
     box-sizing: border-box;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.5;
+      text-decoration: underline;
+    }
   }
 
-  &__item:hover &__item-btn {
+  &__item:hover &__item-btn,
+  &__item:focus &__item-btn {
     padding: 27px 22px 26px;
     color: #ffffff;
     border: none;

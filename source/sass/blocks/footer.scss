@@ -40,6 +40,19 @@
     font-weight: 400;
     color: #ffffff;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.5;
+      text-decoration: underline;
+    }
   }
 
   &__social {
@@ -61,6 +74,18 @@
 
   &__social-icon {
     fill: #ffffff;
+
+    &:hover {
+      fill: rgba(255, 255, 255, 0.5);
+    }
+
+    &:focus {
+      fill: rgba(255, 255, 255, 0.5);
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.7);
+    }
   }
 
   @media (max-width: $tablet-width) {

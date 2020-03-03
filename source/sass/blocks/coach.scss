@@ -16,6 +16,10 @@
     &:hover {
       background-color: rgba(16, 38, 84, 0.89);
     }
+
+    &:focus {
+      background-color: rgba(16, 38, 84, 0.89);
+    }
   }
 
   &__description {
@@ -79,25 +83,24 @@
     }
   }
 
-  &__wrapper:hover &__name {
+  &__wrapper:hover &__name,
+  &__wrapper:focus &__name {
     top: 17.345%;
   }
 
-  &__wrapper:hover &__description {
+  &__wrapper:hover &__description,
+  &__wrapper:focus &__description {
     display: block;
   }
 
-  &__wrapper:hover &__profession {
+  &__wrapper:hover &__profession,
+  &__wrapper:focus &__profession {
     display: block;
   }
 
   @media (max-width: $tablet-width) {
     width: 47.348%;
     margin-right: 5.31%;
-
-    &:nth-child(3), &:nth-child(4) {
-      order: -1;
-    }
 
     &__photo {
       width: 100%;

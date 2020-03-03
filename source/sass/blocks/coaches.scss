@@ -15,13 +15,7 @@
     padding-left: 2px;
     margin: 0;
     margin-bottom: 52px;
-    font-family: "BebasNeue", "Helvetica", sans-serif;
-    font-size: 49px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 0.03em;
     color: #102654;
-    text-transform: uppercase;
   }
 
   &__list-wrapper {
@@ -90,6 +84,20 @@
       &::after {
         transform: rotate(-45deg);
       }
+    }
+
+    &:hover {
+      box-shadow: 0 0 4px 0 #102654;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 4px 0 #102654;
+    }
+
+    &:active {
+      opacity: 0.5;
+      box-shadow: 0 0 4px 0 #102654;
     }
   }
 
