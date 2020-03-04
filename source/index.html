@@ -531,10 +531,10 @@
           <div class="trial__content-wrapper">
             <form class="trial__form" action="https://echo.htmlacademy.ru" method="post">
               <div class="trial__input-wrapper">
-                <label class="visually-hidden" for="user"></label>
-                <label class="visually-hidden" for="phone"></label>
-                <input class="trial__input" type="text" name="user" placeholder="Имя" id="user">
-                <input class="trial__input" type="tel" name="phone" placeholder="Телефон" id="phone">
+                <label class="visually-hidden" for="user"><span class="visually-hidden">Имя</span></label>
+                <label class="visually-hidden" for="phone"><span class="visually-hidden">Телефон</span></label>
+                <input class="trial__input trial__input--user" type="text" name="user" placeholder="Имя" id="user" required>
+                <input class="trial__input trial__input--phone" type="tel" name="phone" placeholder="Телефон" id="phone" required>
               </div>
               <button class="trial__btn" type="submit">Отправить</button>
             </form>
@@ -631,6 +631,9 @@
   <script defer src="js/coaches-slider.js"></script>
   <script defer src="js/review-slider.js"></script>
   <script defer src="js/main.js"></script>
+  <script defer src="js/trial-form.js"></script>
+  <script defer src="js/mask-library.min.js"></script>
+  <script defer src="js/mask.js"></script>
 
 </body>
 </html>
