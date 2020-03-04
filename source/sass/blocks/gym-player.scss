@@ -1,6 +1,6 @@
 .gym-player {
   position: absolute;
-  bottom: 120px;
+  top: 408px;
   left: 540px;
   width: 364px;
   height: 228px;
@@ -64,6 +64,7 @@
   }
 
   @media (max-width: $tablet-width) {
+    top: auto;
     bottom: 100px;
     left: 50%;
     width: 266px;

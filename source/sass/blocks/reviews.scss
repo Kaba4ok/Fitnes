@@ -119,17 +119,17 @@
     }
 
     &:hover {
-      box-shadow: 0 0 4px 0 #102654;
+      box-shadow: 0 0 4px 0 #000000;
     }
 
     &:focus {
       outline: none;
-      box-shadow: 0 0 4px 0 #102654;
+      box-shadow: 0 0 4px 0 #000000;
     }
 
     &:active {
       opacity: 0.5;
-      box-shadow: 0 0 4px 0 #102654;
+      box-shadow: 0 0 4px 0 #000000;
     }
   }
 

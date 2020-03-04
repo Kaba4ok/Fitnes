@@ -21,6 +21,7 @@
   &__description {
     padding: 0;
     padding-left: 78px;
+    padding-right: 80px;
     margin: 0;
     margin-bottom: 44px;
     font-size: 18px;
@@ -60,6 +61,7 @@
 
     &__description {
       padding-left: 45px;
+      padding-right: 45px;
       margin-bottom: 29px;
       font-size: 12px;
     }
@@ -84,8 +86,7 @@
     }
 
     &__description {
-      padding: 0;
-      padding-right: 15px;
+      padding: 0 55px 0 44px;
       margin: 0 auto;
       margin-bottom: 29px;
     }
