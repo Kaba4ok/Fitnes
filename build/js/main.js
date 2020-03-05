@@ -8,6 +8,7 @@
   let nextCoachesSlideBtn = coaches.querySelector('.coaches__btn-slide--next');
 
   let reviews = document.querySelector('.reviews');
+  let reviewsList = reviews.querySelector('.reviews__list');
   let reviewsSlides = reviews.querySelectorAll('.reviews__item');
   let prevReviewsSlideBtn = reviews.querySelector('.reviews__btn--prev');
   let nextReviewsSlideBtn = reviews.querySelector('.reviews__btn--next');
@@ -163,6 +164,22 @@
       inputPhone.setCustomValidity('');
     }
   });
+
+  let getSlidesWrapperHeight = function (elements) {
+    let elementsHeights = [];
+
+    elements.forEach(function(element) {
+      elementsHeights.push(element.offsetHeight);
+    });
+
+    elementsHeights.sort(function(a, b) {
+      return b - a;
+    });
+
+    return elementsHeights[0];
+  }
+
+  reviewsList.style.height = getSlidesWrapperHeight(reviewsSlides) + 'px';
 
   startSlideShow(coachesSlides);
   showReview(reviewsSlides, false);

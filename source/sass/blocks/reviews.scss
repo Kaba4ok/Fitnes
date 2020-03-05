@@ -63,11 +63,11 @@
     font-weight: 400;
     line-height: 140%;
     color: #ffffff;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 5;
+    // -webkit-box-orient: vertical;
   }
 
   &__btn {
