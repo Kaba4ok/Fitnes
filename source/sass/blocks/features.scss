@@ -1,10 +1,13 @@
 .features {
-  max-width: 1366px;
-  width: 84.92%;
-  padding-top: 117px;
+  padding-top: 120px;
   padding-bottom: 34px;
-  margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #F8F9FC;
+
+  &__content-wrapper {
+    max-width: 1366px;
+    width: 84.92%;
+    margin: 0 auto;
+  }
 
   &__title {
     padding: 0;
@@ -175,9 +178,12 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 88.282%;
     padding-top: 99px;
     padding-bottom: 49px;
+
+    &__content-wrapper {
+      width: 88.282%;
+    }
 
     &__title {
       font-size: 42px;
@@ -277,8 +283,12 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
-    padding-top: 49px;
+    padding-top: 70px;
+    padding-bottom: 28px;
+
+    &__content-wrapper {
+      width: 100%;
+    }
 
     &__title {
       font-size: 32px;

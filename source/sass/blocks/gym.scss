@@ -2,7 +2,7 @@
   position: relative;
   max-width: 1366px;
   padding-top: 120px;
-  padding-bottom: 235px;
+  padding-bottom: 233px;
   margin: 0 auto;
 
   &__wrapper {
@@ -51,7 +51,7 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 99px;
-    padding-bottom: 183px;
+    padding-bottom: 182px;
 
     &__wrapper {
       flex-direction: column;

@@ -1,17 +1,21 @@
 .tickets {
-  max-width: 1366px;
-  padding-top: 118px;
+  padding-top: 120px;
   padding-bottom: 189px;
-  margin: 0 auto;
 
-  background-color: #ffffff;
-  background-image: url("../img/bg-disk-desktop@1x.png");
+  background-image:
+    url("../img/bg-disk-desktop@1x.png"),
+    linear-gradient(to bottom, #F8F9FC 92.5%, transparent 7.5%);
   background-repeat: no-repeat;
-  background-position: right bottom -80px;
+  background-position: right bottom -80px, left top;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-disk-desktop@2x.png");
     background-size: 287px 494px;
+  }
+
+  &__content-wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
   }
 
   &__title {
@@ -203,10 +207,12 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding-top: 99px;
+    padding-top: 100px;
     padding-bottom: 111px;
-    background-image: url("../img/bg-disk-tablet@1x.png");
-    background-position: right bottom -73px;
+    background-image:
+      url("../img/bg-disk-tablet@1x.png"),
+      linear-gradient(to bottom, #F8F9FC 97.2%, transparent 2.8%);
+    background-position: right bottom -73px, left top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-disk-tablet@2x.png");
@@ -247,8 +253,9 @@
 
   @media (max-width: $mobile-width) {
     padding-top: 70px;
-    padding-bottom: 56px;
+    padding-bottom: 70px;
     background-image: none;
+    background-color: #F8F9FC;
 
     &__title {
       margin-bottom: 21px;
@@ -273,6 +280,10 @@
       width: 100%;
       padding: 45px 42px 55px;
       margin-bottom: 35px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       &:hover {
         padding: 38px 35px 48px;

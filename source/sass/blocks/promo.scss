@@ -76,6 +76,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    padding-top: 69px;
     padding-bottom: 35px;
 
     &__wrapper {
@@ -86,7 +87,7 @@
     }
 
     &__description {
-      padding: 0 55px 0 44px;
+      padding: 0 55px 0 40px;
       margin: 0 auto;
       margin-bottom: 29px;
     }
